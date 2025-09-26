@@ -23,14 +23,15 @@ class Grafo(ABC):
     def remover_aresta(self, u, v):
         pass
 
-    @abstractmethod
-    def imprimir(self):
-        pass
+    # @abstractmethod
+    # def imprimir(self):
+    #     pass
 
 class GrafoDenso(Grafo):
     def __init__(self, vertices, arestas=None, features=None, circles=None):
         self.vertices = vertices
         self.n = len(vertices)
+        self.mapa_indices = {vertice: i for i, vertice in enumerate(self.vertices)}
         self.matriz = [[0]*self.n for _ in range(self.n)]
         self.features = features or {}
         self.circles = circles or []
@@ -40,7 +41,7 @@ class GrafoDenso(Grafo):
                 self.adicionar_aresta(u, v)
 
     def _indice(self, vertice):
-        return self.vertices.index(vertice)
+        return self.mapa_indices[vertice]
 
     def numero_de_vertices(self):
         return self.n
