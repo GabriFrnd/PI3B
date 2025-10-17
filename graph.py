@@ -203,3 +203,8 @@ class GrafoDenso(Grafo):
         max_arestas_possiveis = grau * (grau - 1) / 2
         
         return arestas_entre_vizinhos / max_arestas_possiveis
+    
+    def coeficiente_de_clusterizacao_medio(self):
+        """Calcula o coeficiente de clusterização médio do grafo."""
+        soma_coeficientes = sum(self.coeficiente_de_clusterizacao_local(v) for v in self.vertices)
+        return soma_coeficientes / self.n if self.n > 0 else 0.0
