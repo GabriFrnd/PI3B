@@ -53,17 +53,16 @@ source venv/bin/activate
 ```bash
 pip install -r requirements.txt
 ```
-Caso não haja requirements.txt, instale manualmente:
+Caso não haja **requirements.txt**, instale manualmente:
 
 ```bash
-Copiar código
 pip install networkx pandas scikit-learn matplotlib seaborn plotly fpdf
 ```
 
 # 5️⃣ Preparar os Dados
 
-Coloque seus arquivos de dados (CSV, JSON, etc.) na pasta data/.
-Certifique-se de que os dados estejam no formato esperado pelo script main.py.
+- Coloque seus arquivos de dados (CSV, JSON, etc.) na pasta **data/**.
+- Certifique-se de que os dados estejam no formato esperado pelo script **main.py**.
 
 # 6️⃣ Executar a Análise
 
