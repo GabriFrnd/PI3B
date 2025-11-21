@@ -1,7 +1,5 @@
 ## 🔍 Análise de Redes Sociais com Grafos
 
----
-
 📊 Um projeto de análise de redes sociais que utiliza teoria dos grafos para identificar usuários influentes e detectar comunidades em redes sociais. Este projeto combina métricas de centralidade e algoritmos avançados para analisar a estrutura e dinâmica de interações sociais.
 
 ## ✨ Funcionalidades
