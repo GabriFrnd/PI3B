@@ -1,98 +1,51 @@
-📊 Análise de Redes Sociais com Grafos
-Este projeto realiza a análise de redes sociais por meio de Teoria dos Grafos, com foco na identificação de usuários influentes e detecção de comunidades usando o dataset Facebook Ego Networks. Foram aplicadas métricas de centralidade e diversos algoritmos de detecção de comunidades, com resultados consolidados em relatórios automatizados.
+# 🔍 Análise de Redes Sociais com Grafos
 
-🧠 Objetivos
+📊 Um projeto de análise de redes sociais que utiliza teoria dos grafos para identificar usuários influentes e detectar comunidades em redes sociais. Este projeto combina métricas de centralidade e algoritmos avançados para analisar a estrutura e dinâmica de interações sociais.
 
-1. Identificar os usuários mais influentes em redes sociais usando métricas de centralidade (Grau, Proximidade, Intermediação, PageRank).
-2. Detectar comunidades com algoritmos como Girvan–Newman, Louvain, Infomap, K-Click, Label Propagation, SLPA e DEMON.
-3. Comparar o desempenho dos algoritmos usando métricas como NMI, ARI e Modularidade.
-4. Visualizar a estrutura das redes e comunidades geradas.
+## ✨ Funcionalidades
 
-🛠 Tecnologias Utilizadas
+- **Identificação de Influenciadores**: Calcula métricas de centralidade (Grau, Proximidade, Intermediação, PageRank) para detectar usuários mais influentes
+- **Detecção de Comunidades**: Aplica algoritmos como Girvan-Newman, Louvain, Infomap, K-Click, Label Propagation, SLPA e DEMON para identificar grupos sociais
+- **Visualização Intuitiva**: Gera representações gráficas das redes, coloridas por comunidade, para facilitar a interpretação
+- **Análise Comparativa**: Avalia o desempenho dos algoritmos através de métricas como NMI, ARI e Modularidade
+- **Relatórios Automatizados**: Gera relatórios em PDF com resultados estruturais e visualizações
 
-1. Python
-2. NetworkX
-3. Matplotlib
-4. Pandas
-5. Algoritmos de detecção de comunidades (Louvain, Infomap, SLPA, etc.)
-6. Facebook Ego Networks (dataset público)
+## 🧱 Tecnologias Utilizadas
 
-📈 Métricas de Centralidade Aplicadas
+- **Python** - Linguagem principal para análise de dados
+- **NetworkX** - Biblioteca para análise e manipulação de grafos
+- **Matplotlib** - Geração de visualizações e gráficos
+- **Pandas** - Manipulação e análise estruturada de dados
+- **Scikit-learn** - Métricas de avaliação (NMI, ARI)
 
-1. Grau
-2. Proximidade
-3. Intermediação (Betweenness)
-4. PageRank
+## 🚀 Como Executar o Projeto
 
-🧩 Algoritmos de Detecção de Comunidades
+### Pré-requisitos
+- Python 3.8 ou superior
+- pip (gerenciador de pacotes do Python)
 
-1. Girvan–Newman
-2. Louvain
-3. Infomap
-4. K-Click
-5. Label Propagation (LP)
-6. SLPA
-7. DEMON
+🛠️ Como Fazer o Deploy (Instalação e Execução)
+Para configurar e rodar o projeto PI3B em seu ambiente local, siga os passos abaixo:
 
-🚀 Como Executar o Projeto
+Pré-requisitos
+Certifique-se de ter o Python 3.x e o pip (gerenciador de pacotes) instalados em seu sistema.
 
-1. Clone o repositório
-   
-bash
+Passo 1: Clonar o Repositório
+Abra seu terminal ou prompt de comando e clone o projeto usando o Git:
+
+Bash
 git clone https://github.com/GabriFrnd/PI3B.git
 cd PI3B
+Passo 2: Instalar as Dependências
+O projeto depende de bibliotecas listadas no arquivo requirements.txt. Instale todas as dependências usando o pip install -r:
 
-3. Instale as dependências
-
-bash
+Bash
 pip install -r requirements.txt
+Este comando garante que todas as bibliotecas necessárias, como NetworkX, sejam instaladas nas versões compatíveis.   
 
-Caso não haja um arquivo requirements.txt, instale manualmente:
+Passo 3: Executar a Análise
+Execute o arquivo principal do projeto (assumindo main.py como ponto de entrada) para iniciar o cálculo das métricas de centralidade, detecção de comunidades e a geração dos relatórios analíticos em PDF:
 
-bash
-pip install networkx matplotlib pandas numpy scikit-learn
-
-3. Execute o script principal
-
-bash
+Bash
 python main.py
-
-4. Visualize os resultados
-
-Os relatórios em PDF serão gerados na pasta results/.
-As imagens dos grafos coloridos por comunidade serão salvas em images/.
-
-📌 Resultados Destacados
-
-O algoritmo SLPA obteve a maior modularidade (0,66), indicando comunidades internamente coesas.
-Infomap e Label Propagation apresentaram bom equilíbrio entre NMI e modularidade.
-Redes mais densas tendem a ter maior modularidade e estrutura comunitária mais complexa.
-
-📄 Estrutura do Projeto
-
-PI3B/
-├── data/                 # Datasets (Facebook Ego Networks)
-├── src/                  # Código-fonte
-│   ├── grafo.py          # Classe GrafoDenso (matriz de adjacência)
-│   ├── metricas.py       # Cálculo de centralidade
-│   ├── comunidades.py    # Algoritmos de detecção
-│   └── visualizacao.py   # Geração de gráficos
-├── results/              # Relatórios em PDF
-├── images/               # Imagens dos grafos
-├── main.py               # Script principal
-└── README.md
-
-👥 Autores
-
-1. Davi Serra Bezerra
-2. Gabriel Fernandes Feitosa
-3. Guilherme Tempesta Francisco
-4. David Lopes Bezerra de Oliveira
-5. Gabrielle Arruda Rodrigues
-6. Vinicius von Glehn Severo
-
-📚 Referências
-
-NetworkX Documentation
-SNAP: Social Circles - Facebook
-Leskovec, J.; McAuley, J. (2012). Learning to Discover Social Circles in Ego Networks.
+A execução produzirá os resultados das métricas e as visualizações gráficas das redes analisadas.   
