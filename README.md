@@ -18,7 +18,7 @@
 - **Pandas** - Manipulação e análise estruturada de dados
 - **Scikit-learn** - Métricas de avaliação (NMI, ARI)
 
-# 🚀 Passo a Passo Completo para Executar o PI3B
+# 🚀 Passo a Passo
 
 # 1️⃣ Pré-requisitos
 
@@ -35,7 +35,7 @@ git clone https://github.com/GabriFrnd/PI3B.git
 cd PI3B
 ```
 
-## 3️⃣ Criar e Ativar Ambiente Virtual (Recomendado)
+# 3️⃣ Criar e Ativar Ambiente Virtual (Recomendado)
 
 ```bash
 # Criar ambiente virtual
@@ -46,4 +46,27 @@ venv\Scripts\activate
 
 # Ativar no macOS / Linux
 source venv/bin/activate
+```
+
+# 4️⃣ Instalar Dependências
+
+```bash
+pip install -r requirements.txt
+```
+Caso não haja requirements.txt, instale manualmente:
+
+```bash
+Copiar código
+pip install networkx pandas scikit-learn matplotlib seaborn plotly fpdf
+```
+
+# 5️⃣ Preparar os Dados
+
+Coloque seus arquivos de dados (CSV, JSON, etc.) na pasta data/.
+Certifique-se de que os dados estejam no formato esperado pelo script main.py.
+
+# 6️⃣ Executar a Análise
+
+```bash
+python main.py
 ```
