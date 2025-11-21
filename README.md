@@ -17,3 +17,19 @@
 - **Matplotlib** - Geração de visualizações e gráficos
 - **Pandas** - Manipulação e análise estruturada de dados
 - **Scikit-learn** - Métricas de avaliação (NMI, ARI)
+
+## 🚀 Passo a Passo Completo para Executar o PI3B
+
+## 1️⃣ Pré-requisitos
+
+Antes de começar, certifique-se de ter instalado:
+
+- **Python 3.8 ou superior**  
+- **pip** (gerenciador de pacotes)  
+- **Git** (opcional, mas recomendado para clonar o repositório)
+
+## 2️⃣ Clonar o Repositório
+
+```bash
+git clone https://github.com/GabriFrnd/PI3B.git
+cd PI3B
