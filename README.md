@@ -33,6 +33,7 @@ Antes de começar, certifique-se de ter instalado:
 ```bash
 git clone https://github.com/GabriFrnd/PI3B.git
 cd PI3B
+```
 
 ## 3️⃣ Criar e Ativar Ambiente Virtual (Recomendado)
 
@@ -45,3 +46,4 @@ venv\Scripts\activate
 
 # Ativar no macOS / Linux
 source venv/bin/activate
+```
